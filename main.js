@@ -104,6 +104,18 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
     }
+	
+	   if (message.content === prefix + `SalamAliku`){
+        message.delete()
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#D31E34")
+            .addFieldSalamAliku :", "``SalamAlikuSalamAlikuSalamAlikuSalamAliku``")
+            .setFooter("Copyright 2019 © PP GA")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
 
     if (message.content === prefix + `addcommande`){
         message.delete()
