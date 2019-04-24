@@ -109,7 +109,7 @@ Client.on("message", async (message) => {
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
-            .addFieldSalamAliku :", "``SalamAlikuSalamAlikuSalamAlikuSalamAliku``")
+            .addField("SalamAliku", "``SalamAliku LOL #KACE AIME ALIKU``")
             .setFooter("Copyright 2019 © PP GA")
         message.channel.sendEmbed(help_embed);
         //messagechannel
