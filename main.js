@@ -6,7 +6,7 @@ const prefix = ";"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `;commandes | PP GA`, type: 0} });
+	Client.user.setPresence({ game: { name: `;commandes | TOUR EIFFEL`, type: 0} });
 });
 
 
@@ -47,7 +47,7 @@ Client.on("message", async (message) => {
             .setDescription("Informations du Discord")
             .addField("Nom du discord", message.guild.name)
             .addField("Utilisateurs sur le discord", message.guild.memberCount)
-            .setFooter("Copyright 2019 © PP GA")
+            .setFooter("Copyright 2019 © NéoEiffel")
             .setColor("RANDOM")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -55,13 +55,12 @@ Client.on("message", async (message) => {
     
     }
 
-    if (message.content === prefix + `ppga`){
+    if (message.content === prefix + `toureiffel`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
-            .setDescription("Informations des Admins")
-            .addField("Twitter Kace :", "@KaceCM")
-            .addField("Twitter Falconly :", "@Falconly_")
-            .setFooter("Copyright 2019 © PP GA")
+            .setDescription("Informations des Membres de la Tour Eiffel")
+            .addField("Twitter Néo :", "@SLG_Néo")
+            .setFooter("Copyright 2019 © NéoEiffel")
             .setColor("RANDOM")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -73,8 +72,8 @@ Client.on("message", async (message) => {
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#35CEB1")
-            .addField(":computer: Commandes Joueurs :", "  \n \n **;ppga** ! Sert à te donner les réseaux sociaux de Kace et Falconly ! \n   \n **;info** : Sert à voir le nombres d'utilisateurs connecté sur le discord ! \n     \n **;addcommande** : Sert à améliorer le serveur ! \n")
-            .setFooter("Copyright 2019 © PP GA")
+            .addField(":computer: Commandes Joueurs :", "  \n \n **;ppga** ! Sert à te donner les réseaux sociaux de Néo ! \n   \n **;info** : Sert à voir le nombres d'utilisateurs connecté sur le discord ! \n     \n **;addcommande** : Sert à améliorer le serveur ! \n")
+            .setFooter("Copyright 2019 © NéoEiffel")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
@@ -98,19 +97,19 @@ Client.on("message", async (message) => {
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
             .addField(":computer: Warn (Staff) :", "``Vous navez pas les autorisations nécessaire !``")
-            .setFooter("Copyright 2019 © PP GA")
+            .setFooter("Copyright 2019 © NéoEiffel")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
     
     }
 	
-	   if (message.content === prefix + `SalamAliku`){
+	   if (message.content === prefix + `neo`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
-            .addField("SalamAliku", "``SalamAliku LOL #KACE AIME ALIKU``")
-            .setFooter("Copyright 2019 © PP GA")
+            .addField("SalamAliku", "``Propriétaire de la Tour Eiffel``")
+            .setFooter("Copyright 2019 © NéoEiffel")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
@@ -123,7 +122,7 @@ Client.on("message", async (message) => {
             .setColor("#D31E34")
             .addField(":white_check_mark: Validation (Ci-dessous) :", "``Veuillez décrire la futur commande que vous voulez ajouter et le nom de la commande``")
             .addField(":white_check_mark: Validé :", "``Votre commande sera pris en compte sous peu.``")
-            .setFooter("Copyright 2019 © PP GA")
+            .setFooter("Copyright 2019 © NéoEiffel")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
