@@ -59,7 +59,7 @@ Client.on("message", async (message) => {
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
-            .addField(":white_check_mark: Validation :", "``Un **LG UHC** va être mis en place demain aux alentours de __15 heures__.")
+            .addField(":white_check_mark: Validation :", "Un **LG UHC** va être mis en place demain aux alentours de __15 heures__.")
             .setFooter("Copyright 2019 © NLCORP")
         message.channel.sendEmbed(help_embed);
         //messagechannel
