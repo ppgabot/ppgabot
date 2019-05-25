@@ -47,7 +47,7 @@ Client.on("message", async (message) => {
             .setDescription("Informations du Discord")
             .addField("Nom du discord", message.guild.name)
             .addField("Utilisateurs sur le discord", message.guild.memberCount)
-            .setFooter("Copyright 2019 © NéoEiffel")
+            .setFooter("Copyright 2019 © NLCORP")
             .setColor("RANDOM")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -55,74 +55,24 @@ Client.on("message", async (message) => {
     
     }
 
-    if (message.content === prefix + `toureiffel`){
+    if (message.content === prefix + `formulaire`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
-            .setDescription("Informations des Membres de la Tour Eiffel")
-            .addField("Twitter Néo :", "@SLG_Néo")
-            .setFooter("Copyright 2019 © NéoEiffel")
-            .setColor("RANDOM")
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
-    
-    }
-    
-    if (message.content === prefix + `commandes`){
-        message.delete()
-        var help_embed = new Discord.RichEmbed()
-            .setColor("#35CEB1")
-            .addField(":computer: Commandes Joueurs :", "  \n \n **;ppga** ! Sert à te donner les réseaux sociaux de Néo ! \n   \n **;info** : Sert à voir le nombres d'utilisateurs connecté sur le discord ! \n     \n **;addcommande** : Sert à améliorer le serveur ! \n")
-            .setFooter("Copyright 2019 © NéoEiffel")
+            .setColor("#D31E34")
+            .addField(":white_check_mark: Validation :", "``Un **LG UHC** va être mis en place demain aux alentours de __15 heures__.")
+            .setFooter("Copyright 2019 © NLCORP")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
     
     }
 	
-	    if (message.content === prefix + `commandes`){
-            message.delete()
-        var help_embed = new Discord.RichEmbed()
-            .setColor("#D31E34")
-            .addField(":computer: Commandes Staff :", "  \n   \n **;ban** : Sert à bannir les personnes ! \n   \n **;kick** : Sert à expulser des personnes ! \n   \n **;warn** : Sert à avertir des personnes !")
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
-    
-	}
-
-	
-	   if (message.content === prefix + `warn`){
+    if (message.content === prefix + `formulaire`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
-            .addField(":computer: Warn (Staff) :", "``Vous navez pas les autorisations nécessaire !``")
-            .setFooter("Copyright 2019 © NéoEiffel")
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
-    
-    }
-	
-	   if (message.content === prefix + `neo`){
-        message.delete()
-        var help_embed = new Discord.RichEmbed()
-            .setColor("#D31E34")
-            .addField("SalamAliku", "``Propriétaire de la Tour Eiffel``")
-            .setFooter("Copyright 2019 © NéoEiffel")
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
-    
-    }
-
-    if (message.content === prefix + `addcommande`){
-        message.delete()
-        var help_embed = new Discord.RichEmbed()
-            .setColor("#D31E34")
-            .addField(":white_check_mark: Validation (Ci-dessous) :", "``Veuillez décrire la futur commande que vous voulez ajouter et le nom de la commande``")
-            .addField(":white_check_mark: Validé :", "``Votre commande sera pris en compte sous peu.``")
-            .setFooter("Copyright 2019 © NéoEiffel")
+            .addField(":white_check_mark: Inscription :", "http://lunys.fr/nlcorp.html")
+            .setFooter("Copyright 2019 © NLCORP")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
