@@ -6,7 +6,7 @@ const prefix = ";"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `LG UHC | NL-CORP`, type: 0} });
+	Client.user.setPresence({ game: { name: `;commandes`, type: 0} });
 });
 
 
@@ -47,7 +47,7 @@ Client.on("message", async (message) => {
             .setDescription("Informations du Discord")
             .addField("Nom du discord", message.guild.name)
             .addField("Utilisateurs sur le discord", message.guild.memberCount)
-            .setFooter("Copyright 2019 © NLCORP")
+            .setFooter("Copyright 2019 © iServ")
             .setColor("RANDOM")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -55,24 +55,63 @@ Client.on("message", async (message) => {
     
     }
 
-    if (message.content === prefix + `formulaire`){
+    if (message.content === prefix + `iserv`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
-            .setColor("#D31E34")
-            .addField(":white_check_mark: Validation :", "Un **LG UHC** va être mis en place demain aux alentours de __15 heures__.")
-            .setFooter("Copyright 2019 © NLCORP")
+            .setDescription("Informations des Admins")
+            .addField("Twitter Néo :", "@")
+            .addField("Twitter Swity :", "@")
+            .setFooter("Copyright 2019 © iServ")
+            .setColor("RANDOM")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+    
+    if (message.content === prefix + `commandes`){
+        message.delete()
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#35CEB1")
+            .addField(":computer: Commandes Joueurs :", "  \n \n **;iserv** ! Sert à te donner les réseaux sociaux de Néo et Swity ! \n   \n **;info** : Sert à voir le nombres d'utilisateurs connecté sur le discord ! \n     \n **;addcommande** : Sert à améliorer le serveur ! \n")
+            .setFooter("Copyright 2019 © iServ")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
     
     }
 	
-    if (message.content === prefix + `formulaire`){
+	    if (message.content === prefix + `commandes`){
+            message.delete()
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#D31E34")
+            .addField(":computer: Commandes Staff :", "  \n   \n **;ban** : Sert à bannir les personnes ! \n   \n **;kick** : Sert à expulser des personnes ! \n   \n **;warn** : Sert à avertir des personnes !")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+	}
+
+	
+	   if (message.content === prefix + `warn`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
-            .addField(":white_check_mark: Inscription :", "http://lunys.fr/nlcorp.html")
-            .setFooter("Copyright 2019 © NLCORP")
+            .addField(":computer: Warn (Staff) :", "``Vous navez pas les autorisations nécessaire !``")
+            .setFooter("Copyright 2019 © iServ")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
+    if (message.content === prefix + `addcommande`){
+        message.delete()
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#D31E34")
+            .addField(":white_check_mark: Validation (Ci-dessous) :", "``Veuillez décrire la futur commande que vous voulez ajouter et le nom de la commande``")
+            .addField(":white_check_mark: Validé :", "``Votre commande sera pris en compte sous peu.``")
+            .setFooter("Copyright 2019 © iServ")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
