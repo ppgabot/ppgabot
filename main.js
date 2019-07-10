@@ -6,7 +6,7 @@ const prefix = ";"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `;commandes`, type: 0} });
+	Client.user.setPresence({ game: { name: `;info`, type: 0} });
 });
 
 
@@ -47,7 +47,7 @@ Client.on("message", async (message) => {
             .setDescription("Informations du Discord")
             .addField("Nom du discord", message.guild.name)
             .addField("Utilisateurs sur le discord", message.guild.memberCount)
-            .setFooter("Copyright 2019 © iServ")
+            .setFooter("Copyright 2019 © UniRogue")
             .setColor("RANDOM")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -55,7 +55,7 @@ Client.on("message", async (message) => {
     
     }
 
-    if (message.content === prefix + `iserv`){
+    if (message.content === prefix + `rienrienrien`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setDescription("Informations des Admins")
@@ -69,7 +69,7 @@ Client.on("message", async (message) => {
     
     }
     
-    if (message.content === prefix + `commandes`){
+    if (message.content === prefix + `rienrienrien`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#35CEB1")
@@ -81,7 +81,7 @@ Client.on("message", async (message) => {
     
     }
 	
-	    if (message.content === prefix + `commandes`){
+	    if (message.content === prefix + `rienrienrien`){
             message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
@@ -93,7 +93,7 @@ Client.on("message", async (message) => {
 	}
 
 	
-	   if (message.content === prefix + `warn`){
+	   if (message.content === prefix + `rienrienrien`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
@@ -105,7 +105,7 @@ Client.on("message", async (message) => {
     
     }
 
-    if (message.content === prefix + `addcommande`){
+    if (message.content === prefix + `rienrienrien`){
         message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
